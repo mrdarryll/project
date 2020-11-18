@@ -22,7 +22,7 @@ padding: 0em;
         text-transform: uppercase;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-style: normal;
-        font-size: 20px;
+        font-size: 40px;
 	}
 
 
@@ -44,7 +44,7 @@ body {
 
 body, input, select, textarea {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15pt;
+    font-size: 30pt;
     font-weight: 400;
     line-height: 2em;
 }
@@ -103,15 +103,61 @@ body, input, select, textarea {
     font-size: 20px;
 }
     
-.contact-section {padding: 30em 0 13em 0;
-    background-attachment: fixed;
-    background-image: url(../images/pexels-hasan-albari-1350461.jpg);
-    background-position: center top;
-    background-size: cover;
-    line-height: 1.75;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;}
+.contact-section  {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 200%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 10;
+    }
+  }
 
 #banner {
     padding: 20em 0 13em 0;
@@ -335,7 +381,7 @@ body.is-touch .wrapper.style3 {
 
 		.wrapper.style3 {
 			background-attachment: fixed;
-			background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+			background-image: url("images/overlay.png"), url("/images/pexels-hasan-albari-1350461.jpg");
 			background-position: center center;
 			background-size: cover;
 		}
@@ -459,9 +505,9 @@ body.is-touch .wrapper.style3 {
 
     .feature-grid .feature {
         display: inline-block;
-        float: right;
-        margin-bottom: 5em;
-        width: 50%;
+        float: left;
+        margin-bottom: 2em;
+        width: 25%;
     }
 
         .feature-grid .feature .content {
@@ -469,12 +515,12 @@ body.is-touch .wrapper.style3 {
         }
 
         .feature-grid .feature .image {
-            width: 10%;
+            width: 40%;
         }
 
             .feature-grid .feature .image img {
                 display: inline;
-                max-width: 30%;
+                max-width: 40%;
             }
 
       
