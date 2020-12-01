@@ -94,7 +94,7 @@ body, input, select, textarea {
 .about-section {
     padding: 50em 0 23em 0;
     background-attachment: fixed;
-    background-image: url(../images/pexels-hasan-albari-1350461.jpg);
+    background-image: url(pexels-hasan-albari-1350461.jpg);
     background-position: center top;
     background-size: cover;
     line-height: 5.75;
@@ -162,7 +162,7 @@ body, input, select, textarea {
 #banner {
     padding: 20em 0 13em 0;
     background-attachment: fixed;
-    background-image: url(../images/pexels-hasan-albari-1350461.jpg);
+    background-image: url(pexels-hasan-albari-1350461.jpg);
     background-position: center top;
     background-size: cover;
     line-height: 1.75;
